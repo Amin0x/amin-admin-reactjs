@@ -1,0 +1,29 @@
+.login-warp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-warp .login-card{
+    max-width: 360px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+}
+
+.login-card .title{
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.login-card button{
+    color: white;
+    background-color: green;
+    font-size: 1rem;
+}
+
+.login-card .forget-pass{
+    color: grey;
+    font-size: 0.8rem;
+}

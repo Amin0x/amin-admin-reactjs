@@ -1,0 +1,23 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    background-color: black;
+    padding: 0.5rem;
+    width: 20%;
+}
+
+.sidebar button{
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.sidebar button:last-child{
+    margin-bottom: 0rem;
+}
+
+.logo{
+    color: #d3d3d3;
+}
