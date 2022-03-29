@@ -1,19 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-// import { BrowserRouter } from "react-router-dom";
+
 // import { Link } from "react-router-dom";
-import SideBar from './components/SideBar';
-import Footer from './components/Footer';
+import { Routes, Route, Link } from "react-router-dom";
+import Login from './pages/Login';
+import Home from './pages/Home';
+import UsersHome from './pages/UsersHome';
 
 function App() {
   return (
     <div className="App">
       <div className='page'>
-        <SideBar></SideBar>
-        <div className='content'>
-          <div className='content-warp'>content</div>
-          <Footer></Footer>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/users" element={<UsersHome />} />
+        </Routes>
       </div>
     </div>
   );

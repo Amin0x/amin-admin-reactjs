@@ -1,0 +1,57 @@
+.basic-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 64px;
+}
+
+.basic-info .item{
+    min-width: 180px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: black;
+}
+
+.basic-info .desc {    
+    color: gray;   
+    font-size: 14px;
+}
+
+.basic-info .number {    
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 32px;
+}
+
+.trip-charts{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.trip-charts .chart {
+    width: 49%;
+    height: 360px;
+    background-color: black;
+}
+
+.trip-charts .chart .title {
+    font-size: 14px;
+    font-weight: 700;
+    color: gray;
+    padding: 8px 8px 0;
+    text-align: left;
+}
+
+.trips-desc-pie {
+    width: 60%;
+    background-color: black;
+    padding: 32px;
+    margin-top: 64px;
+}

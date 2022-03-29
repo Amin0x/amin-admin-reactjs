@@ -1,0 +1,113 @@
+.nav{
+    display: flex;
+}
+
+.nav .navlink {
+    padding: 8px 16px;
+    margin-right: 8px;
+    background-color: #cccccc;
+    color: #4b4b4b;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.nav .navlink:hover, .nav .navlink .active {
+    background-color: #d62b2b;
+    color: #fff;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.search span {
+    margin-right: 8px;
+}
+
+.search input {
+    width: 300px;
+    padding: 8px;
+    background-color: #241b1b;
+    outline: 0;
+    border: 1px solid rgb(80, 80, 80);
+    color: #ccc;
+}
+
+.list-warp {
+	display: grid;
+	/* grid-column: 2; */
+	/* grid-auto-rows: 1fr; */
+	/* grid-auto-columns: 2fr; */
+	margin-top: 48px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	column-gap: 20px;
+	row-gap: 20px;
+}
+
+.list-warp .list-item {
+	width: auto;
+	background-color: #121212;
+	padding: 16px;
+	display: flex;
+}
+
+.list-warp .list-item .user-img {
+	max-height: 128px;
+	border-radius: 50%;
+	object-fit: fill;
+	width: 128px;
+}
+
+.list-warp .list-item .detalis {
+	display: flex;
+	margin-left: 16px;
+	flex-direction: column;
+}
+
+.list-warp .list-item .detalis .username,
+.list-warp .list-item .detalis .trips-count,
+.list-warp .list-item .detalis .likes-count,
+.list-warp .list-item .detalis .points,
+.list-warp .list-item .detalis .status {
+    display: block;
+    margin: 0 0 4px 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ccc;
+    text-align: left;
+}
+
+.list-warp .list-item .detalis .username {
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.pagenate {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.pagenate a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer{
+    display: inline-block;
+    margin: 40px auto 0;
+    padding: 8px;
+    background-color: #121212;
+    color: #ccc;
+    font-size: 13px;
+    font-weight: 400;
+}
