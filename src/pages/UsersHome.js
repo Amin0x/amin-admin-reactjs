@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from "react"
 import { Link } from 'react-router-dom'
 import SideBar from '../components/SideBar'
 import './UsersHome.css'
@@ -47,6 +47,37 @@ const data = {
 ]};
 
 function UsersHome() {
+
+
+  const [users, setUsers] = useState([])
+  let page = 0
+
+  const fetchData = (page) => {
+
+    fetch("http://localhost:8080/admin/users?page="+page)
+
+      .then(response => {
+
+        return response.json()
+
+      })
+      .then(data => {
+        ++page
+        setUsers(data)
+
+      })
+
+  }
+
+
+  useEffect(() => {
+
+    fetchData(page)
+
+  }, [])
+
+
+
   const data = {
     page : {
   
@@ -122,17 +153,17 @@ function UsersHome() {
         <SideBar />
         <div className="content-main">
           <div className='nav'>
-            <Link to={'/users'} className='navlink'><span>Create User</span></Link>
-            <Link to={'/users'} className='navlink'><span>Sort</span></Link>
-            <Link to={'/users'} className='navlink'><span>Mode</span></Link>
-            <Link to={'/users'} className='navlink'><span>link</span></Link>
-            <Link to={'/users'} className='navlink'><span>link</span></Link>
+            <Link to={'/admin/users/create'} className='navlink'><span>Create User</span></Link>
+            <Link to={'/admin/users'} className='navlink'><span>Sort</span></Link>
+            <Link to={'/admin/users'} className='navlink'><span>Mode</span></Link>
+            <Link to={'/admin/users'} className='navlink'><span>link</span></Link>
+            <Link to={'/admin/users'} className='navlink'><span>link</span></Link>
           </div>
           <div className='search'>
             <span>Search: </span><input type={'text'} />
           </div>
           <div className='list-warp'>
-            {data.users.map((user)=> {
+            {users.map((user)=> {
               return (
                 <div className='list-item'>
                   <img className='user-img' src={ user.image } />
@@ -141,25 +172,15 @@ function UsersHome() {
                       <p className='trips-count'>Total Trips: { user.totalTrips }</p>
                       <p className='likes-count'>Likes: { user.likes }</p>
                       <p className='points'>Points: { user.points }</p>
-                      <p className='status'>Status: <span>{ user.status }</span></p>
+                      <p className='status'>Status: <span>{ user.password }</span></p>
                   </div>
                 </div>
               )              
             })}
-              <div className='list-item'>
-                  <img className='user-img' src={process.env.PUBLIC_URL + '/no_profile_image.jpg'} />
-                  <div className='detalis'>
-                      <p className='username'>Amin Omer</p>
-                      <p className='trips-count'>Total Trips: 1200</p>
-                      <p className='likes-count'>Likes: 1200</p>
-                      <p className='points'>Points: 1200</p>
-                      <p className='status'>Status: <span>Active</span></p>
-                  </div>
-              </div>
           </div>
           <div className='pagenate'>
             <Link to={'/users'} href="">Prev</Link>
-            <Link to={'/users'} href="">Next</Link>
+            <a href="" onClick={fetchData(page)}>Next</a>
           </div>
           <div className='footer'>v20220329</div>
         </div>
