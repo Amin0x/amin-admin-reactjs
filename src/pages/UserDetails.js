@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './UserDetails.css'
 
-function UserDetails() {
+function UserDetails(props) {
+
+  let id = props.id;
+  
+  useEffect(() => {
+    fetch("localhost:8080/admin/users/" + id)
+  });
+
   return (
     <div>
+      <p></p>
         <img className='user-img'></img>
         <div>AMIN OMER</div>
         <p>active : No</p>
