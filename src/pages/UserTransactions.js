@@ -1,6 +1,17 @@
 import React, { Component } from 'react'
 
-export class UserTransactions extends Component {
+class UserTransactions extends Component {
+
+  constructor(props){
+    super(props);
+
+    this.state = {};
+  }
+
+  componentDidMount(){
+    
+  }
+
   render() {
     return (
       <div>UserTransactions</div>
