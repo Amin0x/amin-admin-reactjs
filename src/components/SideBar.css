@@ -4,7 +4,8 @@
     flex-grow: 0;
     background-color: black;
     padding: 8px;
-    width: 20%;
+    max-width: 250px;
+    min-width: 180px;
 }
 
 .sidebar .links {

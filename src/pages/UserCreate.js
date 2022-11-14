@@ -66,62 +66,62 @@ function UserCreate(){
 
 
   return (
-    <div className="px-5 py-5">
-        <div className="text-2xl">create user</div>
+    <div className="px-16 py-8">
+        <div className="text-2xl mb-8">create user</div>
         <div className="columns-2">
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">name:</label>
             <input className="bg-gray-400 outline-0" type="text" name="name" value={data.name} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">user name:</label>
             <input className="bg-gray-400 outline-0" type="text" name="username" value={data.username} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">natioal id:</label>
             <input className="bg-gray-400 outline-0" type="text" name="nationalId" value={data.nationalId} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">natioal id Image Front:</label>
             <input className="bg-gray-400 outline-0" type="text" name="nationalIdImageFront" value={data.nationalIdImageFront} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">natioal id Image Back:</label>
             <input className="bg-gray-400 outline-0" type="text" name="nationalIdImageBack" value={data.nationalIdImageBack} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">natioal id issue date:</label>
             <input className="bg-gray-400 outline-0" type="text" name="nationalIdIssueDate" value={data.nationalIdIssueDate} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">driving license:</label>
             <input className="bg-gray-400 outline-0" type="text" name="drivingLicense" value={data.drivingLicense} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">driving license Expire:</label>
             <input className="bg-gray-400 outline-0" type="text" name="drivingLicenseExpire" value={data.drivingLicenseExpire} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">user image:</label>
             <input className="bg-gray-400 outline-0" type="text" name="userImage" value={data.userImage} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">car image front:</label>
             <input className="bg-gray-400 outline-0" type="text" name="carimageFront" value={data.carimageFront} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">car color:</label>
             <input className="bg-gray-400 outline-0" type="text" name="carColor" value={data.carColor} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">car image back:</label>
             <input className="bg-gray-400 outline-0" type="text" name="carImageBack" value={data.carImageBack} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">car plate number:</label>
             <input className="bg-gray-400 outline-0" type="text" name="carPlateNumber" value={data.carPlateNumber} onChange={handleChange}/>
           </div>
-          <div className="w-full mb-2">
+          <div className="w-full mb-4">
             <label className="block  text-sm">car license image front:</label>
             <input className="bg-gray-400 outline-0" type="text" name="carLicenseImageFront" value={data.carLicenseImageFront} onChange={handleChange}/>
           </div>
@@ -150,13 +150,13 @@ function UserCreate(){
           </label>
         </div>
         <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Select your country</label>
-        <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <select id="countries" className="mb-8 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <option>United States</option>
           <option>Canada</option>
           <option>France</option>
           <option>Germany</option>
         </select>
-        <div><button className="bg-sky-600 hover:bg-sky-700" onClick={sendform}> Save changes </button></div>
+        <div><button className="px-2.5 py-2 bg-sky-600 hover:bg-sky-900 hover:text-gray-100 text-sm" onClick={sendform}> Save changes </button></div>
     </div>
   )
 }

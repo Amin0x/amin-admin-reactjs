@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class UserTransactions extends Component {
+class TransactionEdit extends Component {
 
   constructor(props){
     super(props);

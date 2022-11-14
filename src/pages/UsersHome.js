@@ -48,7 +48,6 @@ class UsersHome extends React.Component {
   render(){
     return (
       <div className='content'>
-          <SideBar />
           <div className="content-main">
             <div className='nav'>
               <Link to={'/admin/users/create'} className='navlink'><span>Create User</span></Link>
@@ -57,8 +56,22 @@ class UsersHome extends React.Component {
               <Link to={'/admin/users'} className='navlink'><span>link</span></Link>
               <Link to={'/admin/users'} className='navlink'><span>link</span></Link>
             </div>
-            <div className='search'>
+            <div className='search mb-3'>
               <span>Search: </span><input type={'text'} />
+            </div>
+            <div className="text-sm">
+              <select className="mr-3 px-4 py-2 text-gray-700">
+                <option>Registeration Date</option>
+                <option>User Name</option>
+                <option>Orders Counts</option>
+                <option>Points Counts</option>
+                <option>Name</option>
+              </select>
+              <select className="mr-3 px-4 py-2 text-gray-700">
+                <option>ASD</option>
+                <option>DES</option>
+              </select>
+              <button>update</button>
             </div>
             <div className='list-warp'>
               {console.log(this.state.users)}
@@ -68,12 +81,17 @@ class UsersHome extends React.Component {
                     <Link to={"/admin/users/"+user.id}><img className='user-img' src={ user.image } /></Link>
                     <div className='detalis'>
                         <p className='username'>{ user.name }</p>
-                        <p className='trips-count'>Total Trips: { user.totalTrips }</p>
-                        <p className='likes-count'>Likes: { user.likes }</p>
-                        <p className='points'>Points: { user.points }</p>
-                        <p className='status'>Status: <span>{ user.password }</span></p>
-                        <p>{user.registrationDate}</p>
-                        <p>{user.username}</p>
+                        <p className='trips-count text-sm'>Total Trips: { user.totalTrips }</p>
+                        <p className='likes-count text-sm'>Likes: { user.likes }</p>
+                        <p className='points text-sm'>Points: { user.points }</p>
+                        <p className='status text-sm'>Status: <span>{ user.password }</span></p>
+                        <p className="text-sm">Reg Date: {user.registrationDate}</p>
+                        <p className="text-sm">Tel: {user.username}</p>
+                        <div>
+                          <button className="mr-2 text-sm">View</button>
+                          <button className="mr-2 text-sm">Edit</button>
+                          <button></button>
+                        </div>
                     </div>
                   </div>
                 )              
