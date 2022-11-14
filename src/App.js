@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 import TransactionHome from './pages/TransactionHome';
 import Settings from './pages/Settings';
 import AppSettings from './pages/AppSettings';
+import TransactionCreate from './pages/TransactionCreate';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
                 <Route path="/admin/users/:id" element={<UserDetails />} />
                 <Route path="/admin/settings" element={<Settings />} />
                 <Route path="/admin/appsettings" element={<AppSettings />} />
+                <Route path="/admin/transactions/create" element={<TransactionCreate/>} />
               </Routes>
             </div>
         </section>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import './TransactionHome.css'
 
 class TransactionHome extends Component {
@@ -33,6 +34,9 @@ class TransactionHome extends Component {
         return (
             <div className='content'>
             <div className='content-main'>
+                <div>
+                    <Link to={'/admin/transactions/create'}><button>Create</button></Link>
+                </div>
                 <div className='filter'>
                     <div className='filter-title'>Filter:</div>
                     <div className='filter-btns-container'>
