@@ -67,62 +67,63 @@ function UserCreate(){
 
   return (
     <div className="px-16 py-8">
-        <div className="text-2xl mb-8">create user</div>
+        <div className="text-2xl mb-8">Create User</div>
         <div className="columns-2">
           <div className="w-full mb-4">
-            <label className="block  text-sm">name:</label>
+            <label className="block  text-sm">Name:</label>
             <input className="bg-gray-400 outline-0" type="text" name="name" value={data.name} onChange={handleChange}/>
           </div>
           <div className="w-full mb-4">
-            <label className="block  text-sm">user name:</label>
+            <label className="block  text-sm">Phone Number:</label>
             <input className="bg-gray-400 outline-0" type="text" name="username" value={data.username} onChange={handleChange}/>
           </div>
           <div className="w-full mb-4">
-            <label className="block  text-sm">natioal id:</label>
+            <label className="block  text-sm">Natioal ID:</label>
             <input className="bg-gray-400 outline-0" type="text" name="nationalId" value={data.nationalId} onChange={handleChange}/>
           </div>
           <div className="w-full mb-4">
-            <label className="block  text-sm">natioal id Image Front:</label>
-            <input className="bg-gray-400 outline-0" type="text" name="nationalIdImageFront" value={data.nationalIdImageFront} onChange={handleChange}/>
-          </div>
-          <div className="w-full mb-4">
-            <label className="block  text-sm">natioal id Image Back:</label>
-            <input className="bg-gray-400 outline-0" type="text" name="nationalIdImageBack" value={data.nationalIdImageBack} onChange={handleChange}/>
-          </div>
-          <div className="w-full mb-4">
-            <label className="block  text-sm">natioal id issue date:</label>
+            <label className="block  text-sm">Natioal ID Issue Date:</label>
             <input className="bg-gray-400 outline-0" type="text" name="nationalIdIssueDate" value={data.nationalIdIssueDate} onChange={handleChange}/>
           </div>
           <div className="w-full mb-4">
-            <label className="block  text-sm">driving license:</label>
+            <label className="block  text-sm">Natioal ID Image (Front):</label>
+            <input className="bg-gray-400 outline-0" type="text" name="nationalIdImageFront" value={data.nationalIdImageFront} onChange={handleChange}/>
+          </div>
+          <div className="w-full mb-4">
+            <label className="block  text-sm">Natioal ID Image (Back):</label>
+            <input className="bg-gray-400 outline-0" type="text" name="nationalIdImageBack" value={data.nationalIdImageBack} onChange={handleChange}/>
+          </div>
+          
+          <div className="w-full mb-4">
+            <label className="block  text-sm">Driving license:</label>
             <input className="bg-gray-400 outline-0" type="text" name="drivingLicense" value={data.drivingLicense} onChange={handleChange}/>
           </div>
           <div className="w-full mb-4">
-            <label className="block  text-sm">driving license Expire:</label>
+            <label className="block  text-sm">Driving License Expire:</label>
             <input className="bg-gray-400 outline-0" type="text" name="drivingLicenseExpire" value={data.drivingLicenseExpire} onChange={handleChange}/>
           </div>
           <div className="w-full mb-4">
-            <label className="block  text-sm">user image:</label>
+            <label className="block  text-sm">User Image:</label>
             <input className="bg-gray-400 outline-0" type="text" name="userImage" value={data.userImage} onChange={handleChange}/>
           </div>
           <div className="w-full mb-4">
-            <label className="block  text-sm">car image front:</label>
+            <label className="block  text-sm">Car Image (Front):</label>
             <input className="bg-gray-400 outline-0" type="text" name="carimageFront" value={data.carimageFront} onChange={handleChange}/>
           </div>
           <div className="w-full mb-4">
-            <label className="block  text-sm">car color:</label>
+            <label className="block  text-sm">Car Color:</label>
             <input className="bg-gray-400 outline-0" type="text" name="carColor" value={data.carColor} onChange={handleChange}/>
           </div>
           <div className="w-full mb-4">
-            <label className="block  text-sm">car image back:</label>
+            <label className="block  text-sm">Car Image (Back):</label>
             <input className="bg-gray-400 outline-0" type="text" name="carImageBack" value={data.carImageBack} onChange={handleChange}/>
           </div>
           <div className="w-full mb-4">
-            <label className="block  text-sm">car plate number:</label>
+            <label className="block  text-sm">Car Plate Number:</label>
             <input className="bg-gray-400 outline-0" type="text" name="carPlateNumber" value={data.carPlateNumber} onChange={handleChange}/>
           </div>
           <div className="w-full mb-4">
-            <label className="block  text-sm">car license image front:</label>
+            <label className="block  text-sm">Car Registration Image (Front):</label>
             <input className="bg-gray-400 outline-0" type="text" name="carLicenseImageFront" value={data.carLicenseImageFront} onChange={handleChange}/>
           </div>
           <div>

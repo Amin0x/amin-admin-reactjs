@@ -9,9 +9,9 @@ export default function TransactionCreate() {
 
   function createTransaction(e){
     e.preventDefault();
-    
+
     fetch({
-      url: 'http://localhost/admin/transaction',
+      url: 'http://localhost:8080/admin/transactions',
       method: 'POST',
       body: JSON.stringify({
         from: from,
@@ -30,19 +30,21 @@ export default function TransactionCreate() {
 
   return (
     <div>
-      <div className='mb-2'>
-        <p><label htmlFor=''>from account</label></p>
-        <input id='' type={'text'} />
-      </div>
-      <div className='mb-2'>
-        <p><label htmlFor=''>to account</label></p>
-        <input id='' type={'text'} onChange={(e) => setFrom(e.target.value)} />
-      </div>
-      <div className='mb-2'>
-        <p><label htmlFor=''>Quantity</label></p>
-        <input id='' type={'text'} onChange={(e) => setDestination(e.target.value)}/>
-      </div>
-      <div><button type='submit' onClick={(e) => createTransaction(e)}>Submit</button></div>
+      <form action="#">
+        <div className='mb-2'>
+          <p><label htmlFor=''>from account</label></p>
+          <input id='' type={'text'} />
+        </div>
+        <div className='mb-2'>
+          <p><label htmlFor=''>to account</label></p>
+          <input id='' type={'text'} onChange={(e) => setFrom(e.target.value)} />
+        </div>
+        <div className='mb-2'>
+          <p><label htmlFor=''>Quantity</label></p>
+          <input id='' type={'text'} onChange={(e) => setDestination(e.target.value)}/>
+        </div>
+        <div><button type='submit' onClick={(e) => createTransaction(e)}>Submit</button></div>
+      </form>
     </div>
   )
 }
