@@ -20,8 +20,8 @@ const Home = (props) => {
 
   Chartjs.register(Title, Tooltip, Legend, LineElement, PointElement, LinearScale, CategoryScale, ArcElement);
 
-  const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  const label2 = ['<= 3 Km', '3-5 Km', '5-10 Km', '10-15 Km', '15-20 Km', '20-25 Km', '> 25 Km'];
+  const chartLabels1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  const chartLabel2 = ['<= 3 Km', '3-5 Km', '5-10 Km', '10-15 Km', '15-20 Km', '20-25 Km', '> 25 Km'];
 
   const data = {
     labels: labels,
