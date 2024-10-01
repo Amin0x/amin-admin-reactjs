@@ -1,9 +1,12 @@
 import { data } from 'autoprefixer'
 import React, { useState } from 'react'
+import { useHistory } from "react-router-dom"
 import './Login.css'
 
 
 const Login = () => {
+
+  const history= use history();
 
   let [state, setState] = useState({
     logining: false,
