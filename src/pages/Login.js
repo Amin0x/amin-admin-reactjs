@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom"
 import './Login.css'
 
 
-const Login = () => {
+const Login = (props) => {
 
   const history= use history();
 
