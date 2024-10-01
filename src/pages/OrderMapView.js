@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 
-class OrderMapView extends Component {
-    constructor(props){
-        super(props);
-    }
+let OrderMapView = (props) => {
+        
 
     render() {
         return (
