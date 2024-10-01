@@ -19,6 +19,10 @@ const Login = () => {
 
     let data = await response.json();
     setState({...state, logining: false});
+
+    if(data === null){
+        
+    }
     
   }
 
