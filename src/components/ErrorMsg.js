@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default const ErrorMsg = (props) => {
+const ErrorMsg = (props) => {
     
       
         this.state = {
@@ -15,3 +15,5 @@ export default const ErrorMsg = (props) => {
         )
     
 }
+
+export default ErrorMsg
