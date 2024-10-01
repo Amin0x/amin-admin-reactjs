@@ -16,7 +16,7 @@ import './Home.css'
 
 
 
-let Home = (props) => {
+const Home = (props) => {
 
   Chartjs.register(Title, Tooltip, Legend, LineElement, PointElement, LinearScale, CategoryScale, ArcElement);
 
