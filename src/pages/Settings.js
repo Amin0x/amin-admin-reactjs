@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Settings() {
+const Settings = (props) => {
   return (
     <div className='py-20 px-20'>
         <div className='mb-5'>Settings</div>
