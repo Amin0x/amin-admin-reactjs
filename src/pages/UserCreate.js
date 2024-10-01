@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './UserCreate.css'
 
 
-function UserCreate(){
+let UserCreate = (props) => {
   
   let initVal = {
     name: '',
