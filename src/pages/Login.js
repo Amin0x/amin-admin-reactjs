@@ -10,13 +10,13 @@ const Login = () => {
   });
 
   function login(){
-    fetch({
+    let response = await fetch({
       url: '/admin/login',
       method: 'post'
-    })
-    .then(response => {})
-    .then(data => {})
-    .catch(err => {});
+    });
+
+    let data = await response.json();
+    
   }
 
   return (
