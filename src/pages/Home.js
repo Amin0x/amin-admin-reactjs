@@ -23,8 +23,8 @@ const Home = (props) => {
   const chartLabels1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   const chartLabel2 = ['<= 3 Km', '3-5 Km', '5-10 Km', '10-15 Km', '15-20 Km', '20-25 Km', '> 25 Km'];
 
-  const data = {
-    labels: labels,
+  const chartData1 = {
+    labels: chartLabels1,
     datasets: [
       {
         label: 'Complated',
@@ -45,8 +45,8 @@ const Home = (props) => {
   
   
   
-  const data2 = {
-    labels: label2,
+  const chartData2 = {
+    labels: chartLabel2,
     datasets: [
       {
         label: 'Trips on last 28 days',
