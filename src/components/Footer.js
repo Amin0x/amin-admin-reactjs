@@ -1,16 +1,10 @@
 import React from 'react'
 
-class Footer extends React.Component {
+const Footer = (props) => {
 
-  constructor(props) {
-    super(props);
-  }
+  
 
-  componentDidMount() {
-
-  }
-
-  render() {
+  
     return (
       <div>
         <footer className="bg-gray-900 text-gray-50">
@@ -51,7 +45,7 @@ class Footer extends React.Component {
         </footer>
       </div>
     )
-  }
+  
 
 }
 
