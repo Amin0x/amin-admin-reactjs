@@ -19,16 +19,14 @@ const Login = () => {
 
     const data = await response.json();
 
-    if (!response.ok){
-       ;
-    }
-
-    
     setState({...state, logining: false});
 
-    if(data === null){
-        
+    if (!response.ok){
+        setState({...state, error: true});
+        return;
     }
+
+    this.props.history.push("/")
     
   }
 
