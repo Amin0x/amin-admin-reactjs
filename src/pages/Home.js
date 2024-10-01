@@ -105,12 +105,12 @@ const Home = (props) => {
 
   useEffect(()=>{
 
-    let response = await fetch({
+    const response = await fetch({
       url: '/admin',
       method: 'get'
     });
 
-    let data = await response.json();
+    const data = await response.json();
 
     if (!response.ok){
        ;
