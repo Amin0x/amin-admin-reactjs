@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-let OrderMapView = (props) => {
+const OrderMapView = (props) => {
         
 
     render() {
