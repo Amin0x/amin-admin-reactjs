@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 import './Login.css'
 
 
-function Login() {
+let Login = () => {
+
   let [state, setState] = useState({
     error: [],
   });
