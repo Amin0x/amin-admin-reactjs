@@ -6,10 +6,12 @@ import './Login.css'
 const Login = () => {
 
   let [state, setState] = useState({
+    logining: false,
     error: [],
   });
 
   function login(){
+    setState({logining: true});
     let response = await fetch({
       url: '/admin/login',
       method: 'post'
