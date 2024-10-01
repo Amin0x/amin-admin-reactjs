@@ -104,21 +104,24 @@ const Home = (props) => {
   });
 
   useEffect(()=>{
-    fetch({
-      url: 'http://localhost:8080/admin',
+
+    let response = await fetch({
+      url: '/admin',
       method: 'get'
-    })
-    .then(resp => {
-      if(resp.ok) return resp.json();
-      throw 'error: something went wrong';
-    })
-    .then(data => {
+    });
+
+    let data = await response.json();
+
+    if (!response.ok){
+       ;
+    }
+
+    
+    
       console.log(data);
       setState({...state, "userCount": data.userCount, "ordersCount": data.ordersCount});
-    })
-    .catch(err => {
-      console.log(err);
-    })
+    
+    
   },[]);
 
   return (
