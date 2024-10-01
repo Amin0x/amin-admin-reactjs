@@ -17,6 +17,9 @@ const Login = () => {
       method: 'post'
     });
 
+    if (response.status == 500)
+       ;
+
     let data = await response.json();
     setState({...state, logining: false});
 
