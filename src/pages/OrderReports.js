@@ -1,6 +1,9 @@
 import React from 'react'
 
-const OrderReports = () => {
+const OrderReports = (props) => {
+
+  useEffect(()=>{});
+
   return (
     <div>OrderReports</div>
   )
