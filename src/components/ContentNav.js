@@ -1,9 +1,11 @@
 import React from 'react'
 
-function ContentNav() {
+const ContentNav = (props) => {
+
   return (
     <div>ContentNav</div>
-  )
+  );
+
 }
 
 export default ContentNav
