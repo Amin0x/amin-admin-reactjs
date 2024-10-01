@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './OrdersHome.css'
 
-function OrdersHome() {
+const OrdersHome = () => {
     
     let [state, setState] = useState({
         orders: [],
