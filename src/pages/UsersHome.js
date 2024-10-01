@@ -4,18 +4,16 @@ import SideBar from '../components/SideBar'
 import './UsersHome.css'
 
 
-class UsersHome extends React.Component {
+let UsersHome = (props) => {
 
-  constructor(props){
-    super(props);
+  
 
     this.state = {
       'users' : [],
       'page' : 1
     }
 
-    this.fetchData = this.fetchData.bind(this);
-  }
+    
 
 
   fetchData(page) {
