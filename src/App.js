@@ -17,7 +17,7 @@ import Settings from './pages/Settings';
 import AppSettings from './pages/AppSettings';
 import TransactionCreate from './pages/TransactionCreate';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <div className='page'>
