@@ -17,10 +17,13 @@ const Login = () => {
       method: 'post'
     });
 
-    if (response.status == 500)
-       ;
-
     let data = await response.json();
+
+    if (!response.ok){
+       ;
+    }
+
+    
     setState({...state, logining: false});
 
     if(data === null){
