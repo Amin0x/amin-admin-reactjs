@@ -18,6 +18,7 @@ import AppSettings from './pages/AppSettings';
 import TransactionCreate from './pages/TransactionCreate';
 
 const App = () => {
+
   return (
     <div className="App">
       <div className='page'>
@@ -53,6 +54,7 @@ const App = () => {
       </div>
     </div>
   );
+
 }
 
 export default App;
