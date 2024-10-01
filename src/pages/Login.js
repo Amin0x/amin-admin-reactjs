@@ -11,13 +11,14 @@ const Login = () => {
   });
 
   function login(){
-    setState({logining: true});
+    setState({...state, logining: true});
     let response = await fetch({
       url: '/admin/login',
       method: 'post'
     });
 
     let data = await response.json();
+    setState({...state, logining: false});
     
   }
 
