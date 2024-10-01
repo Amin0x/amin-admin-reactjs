@@ -1,6 +1,6 @@
 import React from 'react'
 
-function AppSettings() {
+let AppSettings = (props) => {
   return (
     <div>AppSettings</div>
   )
