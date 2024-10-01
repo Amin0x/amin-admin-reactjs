@@ -12,12 +12,12 @@ const Login = () => {
 
   function login(){
     setState({...state, logining: true});
-    let response = await fetch({
+    const response = await fetch({
       url: '/admin/login',
       method: 'post'
     });
 
-    let data = await response.json();
+    const data = await response.json();
 
     if (!response.ok){
        ;
