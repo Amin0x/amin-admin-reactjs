@@ -5,7 +5,7 @@ import './UserDetails.css'
 const UserDetails = (props) => {
 
   
-    initState = {
+    const initState = {
        id: props.id,
        err: false
     }
