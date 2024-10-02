@@ -48,19 +48,16 @@ let UserCreate = (props) => {
     //const form = new FormData()
     //form.append("", )
 
-    fetch({
+    const response= fetch({
       body: data,
       url: "/admin/users",
       method: "post",
       headers:{ "accepts":"application/json" }
-    })
-    .then(response => {
-      console.log(response)
-      return response.json()
-    })
-    .then(data => {
-      console.log(data)
-    })
+    });
+
+    const json = response.json();
+    console.log(data);
+   
   }
 
 
