@@ -56,7 +56,7 @@ let UserCreate = (props) => {
     });
 
     const json = await response.json();
-    console.log(data);
+    console.log(json);
    
   }
 
