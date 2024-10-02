@@ -23,10 +23,10 @@ let UserCreate = (props) => {
   }
 
   //const [data, dispatch] = useReducer(reducer, initVal)
-  const [data, dispatch] = useState(initVal)
+  const [state, setState] = useState(initVal)
 
   function reducer(data, action){
-    return {...data, [action.name] : action.value}
+    return {...state, [action.name] : action.value}
   }
 
   // function handleChange(e){
@@ -37,7 +37,7 @@ let UserCreate = (props) => {
   // }
 
   function handleChange(e){
-    dispatch({
+    setState({
       [e.target.name]: e.target.value
     });
   }
