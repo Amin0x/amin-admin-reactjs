@@ -39,9 +39,9 @@ let UsersHome = (props) => {
   }
 
 
-  componentDidMount(){
-    this.fetchData(this.state.page);
-  }
+  useEffect(()=>{
+    fetchData(this.state.page);
+  });
 
   
     return (
