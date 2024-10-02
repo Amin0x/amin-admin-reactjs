@@ -5,10 +5,12 @@ import './UserDetails.css'
 const UserDetails = (props) => {
 
   
-    this.state = {
+    initState = {
        id: props.id,
        err: false
     }
+
+   let [state, setState] = useState(initState);
   
 
 
