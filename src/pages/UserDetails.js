@@ -29,16 +29,13 @@ const UserDetails = (props) => {
     });
   }
   
-  render() {
+  
     
 
     return (
-if(this.state.err){
-      return (
-        <div>error</div>
-      )
-    }
-
+      this.state.err ?
+      <div>error</div>
+      :
       <React.Fragment>
         <div>
           <section className='flex columns items-center p-5'>
