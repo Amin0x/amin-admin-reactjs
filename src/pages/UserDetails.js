@@ -12,7 +12,7 @@ const UserDetails = (props) => {
   
 
 
-  componentDidMount(){
+  useEffect(()=>{
     fetch("localhost:8080/admin/users/" + this.state.id)
     .then(response => {
       if(response.ok){
@@ -27,7 +27,7 @@ const UserDetails = (props) => {
     .catch(err => {
       this.setState({err: true});
     });
-  }
+  });
   
   
     
