@@ -8,10 +8,12 @@ let UsersHome = (props) => {
 
   
 
-    this.state = {
+    let initstate = {
       'users' : [],
       'page' : 1
     }
+
+   let [state, setState] = use state(initstate);
 
     
 
