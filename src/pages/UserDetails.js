@@ -2,16 +2,14 @@
 import React, { Component } from 'react'
 import './UserDetails.css'
 
-export default class UserDetails extends Component {
+const UserDetails = (props) => {
 
-  constructor(props) {
-    super(props)
   
     this.state = {
        id: props.id,
        err: false
     }
-  }
+  
 
 
   componentDidMount(){
@@ -32,13 +30,15 @@ export default class UserDetails extends Component {
   }
   
   render() {
-    if(this.state.err){
+    
+
+    return (
+if(this.state.err){
       return (
         <div>error</div>
       )
     }
 
-    return (
       <React.Fragment>
         <div>
           <section className='flex columns items-center p-5'>
@@ -179,3 +179,5 @@ export default class UserDetails extends Component {
     )
   }
 }
+
+export default UserDetails
