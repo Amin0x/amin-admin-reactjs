@@ -16,7 +16,7 @@ let UsersHome = (props) => {
     
 
 
-  fetchData(page) {
+  function fetchData(page) {
 
     fetch("http://localhost:8080/admin/users?page="+page)
 
@@ -43,7 +43,7 @@ let UsersHome = (props) => {
     this.fetchData(this.state.page);
   }
 
-  render(){
+  
     return (
       <div className='content'>
           <div className="content-main">
@@ -103,7 +103,7 @@ let UsersHome = (props) => {
           </div>
       </div>
     )
-  }
+  
   
 }
 
