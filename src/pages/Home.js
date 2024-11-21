@@ -110,16 +110,16 @@ const Home = (props) => {
       method: 'get'
     });
 
-    const data = await response.json();
-
     if (!response.ok){
-       ;
+       console.log(response);
     }
 
+    const data = await response.json();
+    console.log(data);
     
     
-      console.log(data);
-      setState({...state, "userCount": data.userCount, "ordersCount": data.ordersCount});
+      
+    setState({...state, "userCount": data.userCount, "ordersCount": data.ordersCount});
     
     
   },[]);
