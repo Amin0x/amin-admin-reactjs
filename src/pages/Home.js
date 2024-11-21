@@ -112,15 +112,11 @@ const Home = (props) => {
 
     if (!response.ok){
        console.log(response);
+    } else {
+       const data = await response.json();
+       console.log(data);
+       setState({...state, "userCount": data.userCount, "ordersCount": data.ordersCount});
     }
-
-    const data = await response.json();
-    console.log(data);
-    
-    
-      
-    setState({...state, "userCount": data.userCount, "ordersCount": data.ordersCount});
-    
     
   },[]);
 
