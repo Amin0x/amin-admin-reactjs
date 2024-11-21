@@ -22,7 +22,7 @@ const App = () => {
   return (
     <div className="App">
       <div className='page'>
-        <section>
+        <section id="header">
           <div>
             <Navbar />
           </div>
