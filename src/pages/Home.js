@@ -105,18 +105,41 @@ const Home = (props) => {
 
   useEffect(()=>{
 
-    const response = await fetch({
-      url: '/admin',
-      method: 'get'
+  try {
+    const response = await fetch('/admin', {
+      method: 'GET', // Ensure method is capitalized as 'GET'
+      headers: {
+        'Content-Type': 'application/json',
+      },
     });
 
-    if (!response.ok){
-       console.log(response);
-    } else {
-       const data = await response.json();
-       console.log(data);
-       setState({...state, "userCount": data.userCount, "ordersCount": data.ordersCount});
+    // Check if the response is OK (status code 200-299)
+    if (!response.ok) {
+      // If not, throw an error with response status
+      throw new Error(`Failed to fetch data: ${response.status} ${response.statusText}`);
     }
+
+    // Parse the response as JSON
+    const data = await response.json();
+
+    // Update state with the response data
+    setState((prevState) => ({
+      ...prevState,
+      userCount: data.userCount,
+      ordersCount: data.ordersCount,
+    }));
+    
+    console.log("Data fetched successfully:", data);
+  } catch (error) {
+    // Catch any errors during fetch or processing the response
+    console.error("An error occurred while fetching the data:", error);
+    // Optionally, you can set error state to display messages to the user
+    setState((prevState) => ({
+      ...prevState,
+      error: error.message, // Store error message in state if needed
+    }));
+  }
+
     
   },[]);
 
