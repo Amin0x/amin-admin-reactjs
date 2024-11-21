@@ -23,7 +23,7 @@ const Home = (props) => {
   const chartLabels1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   const chartLabel2 = ['<= 3 Km', '3-5 Km', '5-10 Km', '10-15 Km', '15-20 Km', '20-25 Km', '> 25 Km'];
 
-  const chartData1 = {
+  const [chartData1, setChartData1] = useState({
     labels: chartLabels1,
     datasets: [
       {
@@ -41,11 +41,11 @@ const Home = (props) => {
         yAxisID: 'y1',
       },
     ],
-  };
+  });
   
   
   
-  const chartData2 = {
+  const [chartData2,  setChartData2] = useState({
     labels: chartLabel2,
     datasets: [
       {
@@ -72,9 +72,10 @@ const Home = (props) => {
         borderWidth: 1,
       },
     ],
-  };
+  });
 
   let [state, setState] = useState({});
+
   let [options, setOptions] = useState({
     responsive: true,
     interaction: {
