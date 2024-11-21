@@ -63,6 +63,7 @@ let UserCreate = (props) => {
 
 
   return (
+<form id="userCreateForm">
     <div className="px-16 py-8">
         <div className="text-2xl mb-8">Create User</div>
         <div className="columns-2">
@@ -156,6 +157,7 @@ let UserCreate = (props) => {
         </select>
         <div><button className="px-2.5 py-2 bg-sky-600 hover:bg-sky-900 hover:text-gray-100 text-sm" onClick={sendform}> Save changes </button></div>
     </div>
+</form>
   )
 }
 
