@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'Alert.css'
 
 const Alert = ({ message }) => {
   const [isVisible, setIsVisible] = useState(true);
