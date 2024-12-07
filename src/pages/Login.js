@@ -35,7 +35,7 @@ const Login = (props) => {
 
   return (
     
-<div>
+<div class="login-wrapper">
     <div class="background">
         <div class="shape"></div>
         <div class="shape"></div>
