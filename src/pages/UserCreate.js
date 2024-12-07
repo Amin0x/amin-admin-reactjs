@@ -60,6 +60,25 @@ let UserCreate = (props) => {
    
   }
 
+function fetchCountryList() {
+  fetch('https://restcountries.com/v3.1/all')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Process the country data
+      const countryNames = data.map(country => country.name.common);
+      console.log(countryNames);
+    })
+    .catch(error => {
+      console.error('There was a problem with the fetch operation:', error);
+    });
+}
+
+
 
 
   return (
