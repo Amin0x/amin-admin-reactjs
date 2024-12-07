@@ -4,7 +4,7 @@ import SideBar from '../components/SideBar'
 import './UsersHome.css'
 
 
-let UsersHome = (props) => {
+const UsersHome = (props) => {
 
   
 
