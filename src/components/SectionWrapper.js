@@ -5,11 +5,12 @@ import './SectionWrapper.css';
 const SectionWrapper = ({ children, details, title }) => {
   return(
     <div className="card">
-      <div className="card-details">
+      <div className="card-title">
         <h2>{title}</h2>
-        {details}
       </div>
+      <div className="card-content">
       {children}
+      </div>
     </div>
   )
 }
