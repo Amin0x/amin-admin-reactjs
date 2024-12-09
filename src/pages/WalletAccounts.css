@@ -1,0 +1,32 @@
+.wallet-accounts {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wallet-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.wallet-name {
+    font-weight: bold;
+}
+
+.wallet-balance {
+    color: green;
+}
