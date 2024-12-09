@@ -10,8 +10,8 @@ const UserEdit = () => {
         password: "",
     });
 
-const [isLoading, setIsLoading] = useState(true);
-  const [errors, setErrors] = useState({});
+			const [isLoading, setIsLoading] = useState(true);
+	const [errors, setErrors] = useState({});
 
     const fetchUserDetails = async () => {
         // Replace with actual API call to fetch user details
