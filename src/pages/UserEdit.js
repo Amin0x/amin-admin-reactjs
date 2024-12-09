@@ -33,6 +33,17 @@ const UserEdit = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+    // Basic validation
+    const newErrors = {};
+    if (!userData.name) newErrors.name = 'Name is required';
+    if (!userData.email) newErrors.email = 'Email is required';
+    setErrors(newErrors);
+
+    // If no validation errors, call the onSave prop
+    if (Object.keys(newErrors).length === 0) {
+      //send the data
+    }
+ 
         // Replace with actual API call to update user details
         console.log("Updated User Details:", user);
     };
