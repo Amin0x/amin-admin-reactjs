@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './SectionWrapper.css';
 
-export default function SectionWrapper ({ children, details, title }) {
+const SectionWrapper = ({ children, details, title }) => {
   return(
     <div className="card">
       <div className="card-details">
@@ -26,3 +26,6 @@ SectionWrapper.propTypes = {
 SectionWrapper.defaultProps = {
   details: null,
 }
+
+
+export default SectionWrapper;
