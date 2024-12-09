@@ -25,7 +25,7 @@ SectionWrapper.propTypes = {
 }
 
 SectionWrapper.defaultProps = {
-  details: null,
+  
 }
 
 
