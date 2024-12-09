@@ -20,7 +20,6 @@ SectionWrapper.propTypes = {
     PropTypes.arrayOf(PropTypes.element), 
     PropTypes.element.isRequired
   ]),
-  details: PropTypes.element,
   title: PropTypes.string.isRequired,
 }
 
