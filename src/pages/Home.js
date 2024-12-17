@@ -148,19 +148,11 @@ const Home = (props) => {
   return (
     <div className='content'>
       <div className='content-main'>
-        <div className='basic-info'>
-          <div className='users item'>
-            <p className='number'>12,290,186</p>
-            <p className='desc'>Users</p>
-          </div>
-          <div className='orders item'>
-            <p className='number'>89,736,304</p>
-            <p className='desc'>Trips</p>
-          </div>
-          <div className='new-users item'>
-            <p className='number'>9,173</p>
-            <p className='desc'>New User</p>
-          </div>
+        <div className='counters'>
+          <Counter color="" title="" count=1000 />
+          <Counter color="" title="" count=1000 />
+          <Counter color="" title="" count=1000 />
+          <Counter color="" title="" count=1000 />
         </div>
         <div className='trip-charts'>
           <div className='chart'>
