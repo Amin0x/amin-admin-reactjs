@@ -1,0 +1,9 @@
+counter-container{
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
