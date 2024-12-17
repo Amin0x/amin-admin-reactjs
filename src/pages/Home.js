@@ -21,22 +21,19 @@ const Home = (props) => {
 
   Chartjs.register(Title, Tooltip, Legend, LineElement, PointElement, LinearScale, CategoryScale, ArcElement);
 
-  const chartLabels1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  const chartLabel2 = ['<= 3 Km', '3-5 Km', '5-10 Km', '10-15 Km', '15-20 Km', '20-25 Km', '> 25 Km'];
-
   const [chartData1, setChartData1] = useState({
-    labels: chartLabels1,
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
     datasets: [
       {
         label: 'Complated',
-        data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+        data: [],
         borderColor: 'rgb(255, 99, 132)',
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
         yAxisID: 'y',
       },
       {
         label: 'Uncomplated',
-        data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+        data: [],
         borderColor: 'rgb(53, 162, 235)',
         backgroundColor: 'rgba(53, 162, 235, 0.5)',
         yAxisID: 'y1',
@@ -47,11 +44,11 @@ const Home = (props) => {
   
   
   const [chartData2,  setChartData2] = useState({
-    labels: chartLabel2,
+    labels: ['<= 3 Km', '3-5 Km', '5-10 Km', '10-15 Km', '15-20 Km', '20-25 Km', '> 25 Km'] ,
     datasets: [
       {
         label: 'Trips on last 28 days',
-        data: label2.map(() => faker.datatype.number({ min: 1000000, max: 9999999 })),
+        data: [],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',
