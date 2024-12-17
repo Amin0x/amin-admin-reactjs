@@ -12,6 +12,7 @@ import {
 } from 'chart.js'
 import React, { useEffect, useState } from 'react'
 import { Line, Pie } from 'react-chartjs-2'
+import Counter from ./components/Counter.js'
 import './Home.css'
 
 
