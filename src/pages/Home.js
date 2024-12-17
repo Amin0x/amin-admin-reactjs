@@ -162,6 +162,16 @@ const Home = (props) => {
             <hr />
             <Line data={data} options={options} />
           </div>
+          <div className='chart'>
+            <div className='title'>Users</div>
+            <hr />
+            <Line data={data} options={options} />
+          </div>
+          <div className='chart'>
+            <div className='title'>Users</div>
+            <hr />
+            <Line data={data} options={options} />
+          </div>
         </div>
         <div className='trips-desc-pie'>
           <Pie data={data2} />
