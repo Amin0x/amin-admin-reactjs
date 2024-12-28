@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import 'Alert.css'
 
-const Alert = ({ message }) => {
-  const [isVisible, setIsVisible] = useState(true);
+const Alert = ({ message, isVisible }) => {
+  const [isVisible, setIsVisible] = useState(isVisible);
 
   const handleClose = () => {
     setIsVisible(false);
